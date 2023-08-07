@@ -4,6 +4,12 @@
 function kanyeData(){
     fetch('https://api.kanye.rest')
     .then( res =>res.json())
-    .then(data => console.log(data))
+    .then(data => showData(data))
 }
-kanyeData();
+
+
+  function showData(Quoteobject){
+    // console.log(Quoteobject)
+    document.getElementById('Quote').innerText=Quoteobject.quote;
+
+  }
