@@ -1,1 +1,9 @@
-console.log('successfull')
+
+
+
+function kanyeData(){
+    fetch('https://api.kanye.rest')
+    .then( res =>res.json())
+    .then(data => console.log(data))
+}
+kanyeData();
