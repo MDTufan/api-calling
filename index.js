@@ -63,7 +63,7 @@ function countryData(countries){
         country.innerHTML=`
         <h3> ${country1.name.common} </h3>
         <p> ${country1?.capital} </p>
-        <button onClick=showCity('${country1.name.common}')> Shows Details</button>
+        <button class="xxx-btn1" onClick=showCity('${country1.name.common}')> Shows Details</button>
         `
         countrydiv.appendChild(country);
     })
